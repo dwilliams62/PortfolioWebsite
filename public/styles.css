@@ -149,3 +149,34 @@ html {
 footer .col-12 {
     text-align: center; /* Centers the icons in the footer */
 }
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .project, .introduction-content {
+        flex-direction: column; /* Stack images on top of text */
+    }
+
+    .project-image-box, .project-text-box, .introduction-image-box {
+        width: 100%; /* Ensure both image and text take full width on mobile */
+        padding-bottom: 1%;
+    }
+
+    .project-image-box-inner img {
+        width: 80%; /* Ensure the image takes full width of the container */
+        max-width: 100%; /* Ensure the image doesn’t exceed the container width */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image-box {
+        max-width: 30%; /* Further adjust image size for very small screens */
+    }
+
+    .project-title {
+        font-size: 20px; /* Adjust title size on small screens */
+    }
+
+    .project p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+}
